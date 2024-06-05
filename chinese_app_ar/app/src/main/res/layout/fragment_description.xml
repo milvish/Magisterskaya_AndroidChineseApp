@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    tools:context=".ui.ar_room.description.DescriptionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/wordTextView"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="hyerogliph" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hieroglyphTextView"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="pinyin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pinyinTextView"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="russian_word"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sentencesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp" />
+
+
+
+</LinearLayout>

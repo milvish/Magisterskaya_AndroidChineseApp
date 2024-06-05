@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "55979012069",
+    "project_id": "chinese-app-ar",
+    "storage_bucket": "chinese-app-ar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55979012069:android:275cb4fa5decd5f760090c",
+        "android_client_info": {
+          "package_name": "com.example.chinese_app_ar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtYBRVvVkNkhKpQgi6ONHXXUKxip8O6hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55979012069:android:d0e57e442fd10d0460090c",
+        "android_client_info": {
+          "package_name": "com.example.chinese_app_ar_part"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtYBRVvVkNkhKpQgi6ONHXXUKxip8O6hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55979012069:android:36d61b454d8296f560090c",
+        "android_client_info": {
+          "package_name": "ru.ulizina.videoPlayer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtYBRVvVkNkhKpQgi6ONHXXUKxip8O6hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

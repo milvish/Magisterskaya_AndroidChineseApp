@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_dark"
+    >
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.chinese_app_ar.ui.ar_room.video.ArVideoPlayerFragment" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        tools:context=".ui.ar_room.video.VideoPlayerArFragment">
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/exoplayerView"
+            android:layout_width="380dp"
+            android:layout_height="350dp"/>
+
+    </FrameLayout>
+
+
+</layout>

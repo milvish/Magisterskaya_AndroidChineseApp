@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFB17D</color>
+    <color name="purple_500">#B87B7D</color>
+    <color name="purple_700">#634344</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+    <color name="semi_transparent_black">#99000000</color>
+    <color name="semi_transparent_description">#99975F60</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blueDark">#FFFFFF</color>
+    <color name="textWhite">#CFCFD0</color>
+
+    <color name="gray">#F4F4F4</color>
+    <color name="orange">#B87B7D</color>
+    <color name="blue">#805657</color>
+
+    <color name="colorAccent">#000</color>
+    <color name="colorBackground">#FFF</color>
+
+    <color name="material_white">#FFFFFF</color>
+    <color name="material_red">#D50000</color>
+    <color name="material_pink">#C51162</color>
+    <color name="material_purple">#AA00FF</color>
+    <color name="material_deep_purple">#6200EA</color>
+    <color name="material_indigo">#304FFE</color>
+    <color name="material_blue">#2962FF</color>
+    <color name="material_light_blue">#0091EA</color>
+    <color name="material_cyan">#00B8D4</color>
+    <color name="material_teal">#00BFA5</color>
+    <color name="material_green">#00C853</color>
+    <color name="material_light_green">#64DD17</color>
+    <color name="material_lime">#AEEA00</color>
+    <color name="material_yellow">#FFD600</color>
+    <color name="material_amber">#FFAB00</color>
+    <color name="material_orange">#FF6D00</color>
+    <color name="material_deep_orange">#DD2C00</color>
+    <color name="material_brown">#3E2723</color>
+    <color name="material_gray">#212121</color>
+    <color name="material_black">#000000</color>
+
+
+    <array name="colors">
+        <item>@color/material_white</item>
+        <item>@color/material_red</item>
+        <item>@color/material_pink</item>
+        <item>@color/material_purple</item>
+        <item>@color/material_deep_purple</item>
+        <item>@color/material_indigo</item>
+        <item>@color/material_blue</item>
+        <item>@color/material_light_blue</item>
+        <item>@color/material_cyan</item>
+        <item>@color/material_teal</item>
+        <item>@color/material_green</item>
+        <item>@color/material_light_green</item>
+        <item>@color/material_lime</item>
+        <item>@color/material_yellow</item>
+        <item>@color/material_amber</item>
+        <item>@color/material_orange</item>
+        <item>@color/material_deep_orange</item>
+        <item>@color/material_brown</item>
+        <item>@color/material_gray</item>
+        <item>@color/material_black</item>
+    </array>
+
+    <color name="lesson_hsk_1">#975F60</color>
+    <color name="lesson_hsk_2">#687E76</color>
+    <color name="lesson_hsk_3">#546988</color>
+    <color name="lesson_hsk_4">#735B49</color>
+    <color name="lesson_hsk_5">#61774B</color>
+    <color name="lesson_hsk_6">#68476E</color>
+    <color name="statistic_1">#FFB4B5</color>
+    <color name="statistic_2">#805657</color>
+    <color name="statistic_3">#AAA5A2</color>
+
+    <color name="button_login_sign_up">#5C3B3C</color>
+    <color name="login_sign_up">#FBE9E9</color>
+
+
+    <color name="ar_room_menu_background">#FFD5D6</color>
+
+    <color name="dark_blue">#0A162E</color>
+</resources>

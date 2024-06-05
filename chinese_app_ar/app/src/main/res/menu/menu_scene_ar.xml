@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/menu_group_scene">
+        <item
+            android:id="@+id/menu_item_resolve_cloud_anchor"
+            android:title="Resolve cloud anchor" />
+        <item
+            android:id="@+id/menu_item_clean_up_scene"
+            android:title="Clean up scene" />
+        <item
+            android:id="@+id/menu_item_settings"
+            android:title="Settings">
+            <menu>
+                <item
+                    android:id="@+id/menu_item_sunlight"
+                    android:checkable="true"
+                    android:title="Sunlight"
+                    app:actionViewClass="android.view.View"
+                    app:showAsAction="collapseActionView" />
+                <item
+                    android:id="@+id/menu_item_shadows"
+                    android:checkable="true"
+                    android:title="Shadows"
+                    app:actionViewClass="android.view.View"
+                    app:showAsAction="collapseActionView" />
+                <item
+                    android:id="@+id/menu_item_plane_renderer"
+                    android:checkable="true"
+                    android:title="Plane renderer"
+                    app:actionViewClass="android.view.View"
+                    app:showAsAction="collapseActionView" />
+                <item
+                    android:id="@+id/menu_item_selection_visualizer"
+                    android:checkable="true"
+                    android:title="Selection visualizer"
+                    app:actionViewClass="android.view.View"
+                    app:showAsAction="collapseActionView" />
+                <item
+                    android:id="@+id/menu_item_reticle"
+                    android:checkable="true"
+                    android:title="Reticle"
+                    app:actionViewClass="android.view.View"
+                    app:showAsAction="collapseActionView" />
+                <item
+                    android:id="@+id/menu_item_point_cloud"
+                    android:checkable="true"
+                    android:title="Point cloud"
+                    app:actionViewClass="android.view.View"
+                    app:showAsAction="collapseActionView" />
+            </menu>
+        </item>
+    </group>
+</menu>

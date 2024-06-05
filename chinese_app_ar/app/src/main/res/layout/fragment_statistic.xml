@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout = "@layout/statistic_field"
+        android:id="@+id/statisticLatestDay"
+        />
+
+    <include
+        layout = "@layout/statistic_field"
+        android:id="@+id/statisticLongestStreak"
+        />
+    <include
+        layout = "@layout/statistic_field"
+        android:id="@+id/statisticCurrentStreak"
+        />
+
+
+
+    <TextView
+            android:id="@+id/fromLastDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+        android:visibility="gone"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corner_statistic_2"
+            android:text="from_last_date"
+
+            />
+    <TextView
+        android:id="@+id/longestStreak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:background="@drawable/rounded_corner_statistic_2"
+        android:text="from_last_date"
+
+        />
+
+    <TextView
+        android:id="@+id/currentStreak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:background="@drawable/rounded_corner_statistic_2"
+        android:text="from_last_date"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/datesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/rounded_corner_statistic_1"
+            android:text="dates_list"
+            android:visibility="gone"
+            android:textColor="@color/dark_blue"
+            android:padding="15dp"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            android:firstDayOfWeek="100"
+            />
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/myCalendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mcv_selectionColor="@color/colorAccent"
+                android:visibility="gone"
+                xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <com.example.chinese_app_ar.ui.statistic.CustomCalendarView
+            android:id="@+id/calendarCustomView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+
+
+</LinearLayout>

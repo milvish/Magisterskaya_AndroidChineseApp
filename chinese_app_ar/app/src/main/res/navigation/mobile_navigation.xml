@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_levels"
+        android:name="com.example.chinese_app_ar.ui.lections.levels.LevelsFragment"
+        android:label="Уровни"
+        tools:layout="@layout/fragment_levels">
+        <action
+            android:id="@+id/action_nav_levels_to_nav_lessons"
+            app:destination="@id/nav_lessons" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_quizlet"
+        android:name="com.example.chinese_app_ar.ui.quizlet.QuizletFragment"
+        android:label="@string/menu_quizlet"
+        tools:layout="@layout/fragment_quizlet" >
+        <action
+            android:id="@+id/action_nav_quizlet_to_quizletQuestionFragment2"
+            app:destination="@id/quizletQuestionFragment" />
+
+        <argument
+            android:name="time"
+            app:argType="string"
+            android:defaultValue="0" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lessons"
+        android:name="com.example.chinese_app_ar.ui.lections.lessons.LessonsFragment"
+        android:label="Уроки"
+        tools:layout="@layout/fragment_lessons">
+        <action
+            android:id="@+id/action_nav_lessons_to_lectionVideoPlayerFragment"
+            app:destination="@id/lectionVideoPlayerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.chinese_app_ar.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_ar"
+        android:name="com.example.chinese_app_ar.ui.ar.SceneArFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_scene_ar" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.chinese_app_ar.ui.ar_room.lesson.ArRoomFragment"
+        android:label="AR Room"
+        tools:layout="@layout/fragment_ar_room" />
+    <fragment
+        android:id="@+id/nav_sign_up"
+        android:name="com.example.chinese_app_ar.ui.signup.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_nav_sign_up_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.chinese_app_ar.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_levels"
+            app:destination="@id/nav_levels" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_sign_up"
+            app:destination="@id/nav_sign_up" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ar_video_player"
+        android:name="com.example.chinese_app_ar.ui.player.PlayerFragment"
+        android:label="fragment_player"
+        tools:layout="@layout/fragment_player" />
+    <fragment
+        android:id="@+id/quizletQuestionFragment"
+        android:name="com.example.chinese_app_ar.ui.quizlet.QuizletQuestionFragment"
+        android:label="Вопрос Quizlet"
+        tools:layout="@layout/fragment_quizlet_question" >
+        <action
+            android:id="@+id/action_quizletQuestionFragment_to_nav_quizlet"
+            app:destination="@id/nav_quizlet" />
+    </fragment>
+    <fragment
+        android:id="@+id/lectionVideoPlayerFragment"
+        android:name="com.example.chinese_app_ar.ui.ar_room.video.LectionVideoPlayerFragment"
+        android:label="Урок" />
+
+    <fragment
+        android:id="@+id/nav_statistic"
+        android:name="com.example.chinese_app_ar.ui.statistic.StatisticsFragment"
+        android:label="Статистика" />
+    <fragment
+        android:id="@+id/nav_ar_room_menu"
+        android:name="com.example.chinese_app_ar.ui.ar_room.menu_ar.ArRoomMenuFragment"
+        android:label="AR Room Меню"
+        tools:layout="@layout/fragment_ar_room_menu" >
+        <action
+            android:id="@+id/action_arRoomMenuFragment_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+
+
+</navigation>

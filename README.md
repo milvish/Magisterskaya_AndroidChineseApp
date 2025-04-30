@@ -22,9 +22,9 @@ Model: Responsible for managing the application's data. It includes business log
 ViewModel: Acts as a link between the Model and the View. The main tasks of the ViewModel are to prepare data for the View and manage the UI state. It ensures data persistence during screen rotations and other configuration changes and performs operations to transform data into the format required for presentation. The ViewModel serves as an intermediary between the Model and the View, facilitating data exchange through commands and events. ViewModel classes, LiveData, and StateFlow can be categorized under ViewModel.
 
 View: Implements data display and is responsible for user interaction. In Android, the View is implemented through Activity, Fragment, or View.
-<div style="text-align: center;">
+<p align="center">
   <img src="images/Рисунок1.png" alt="Рисунок 1" width="500"/>
-</div>
+</p>
 
 The pattern has the following characteristics:
 
@@ -52,9 +52,10 @@ The use of this application implies a large amount of data: 3D models, video res
 Firebase offers several powerful services for data storage and management: Firebase Storage, Realtime Database, and Cloud Firestore.
 
 Firebase Storage: A cloud storage service from Google designed for storing and synchronizing user data such as photos, videos, and other files. Firebase Storage generates unique URLs for each file, which can be used to access them. URLs can be public or private depending on security settings.
-<div style="text-align: center;">
+<p align="center">
   <img src="images/Рисунок2.png" alt="Рисунок 2" width="500"/>
-</div>
+</p>
+
 
 Firebase Realtime Database: A cloud database that provides real-time data storage and synchronization. It is used when applications need to exchange data quickly between clients and the server.
 Key features of Firebase Realtime Database:
@@ -82,15 +83,15 @@ Each of these has its own features, advantages, and disadvantages, making them s
 |Query Mechanism|No|Limited capabilities (filtering, sorting)|Powerful and flexible queries|
 
 ## 1.4. Structure of Android application
-<div style="text-align: center;">
+<p align="center">
   <img src="images/Рисунок3.png" alt="Рисунок 3" width="500"/>
-</div>
+</p>
 
 ## 1.5. Authorization
 The authorization section of the application allows for managing user access to the application's content. In this section, the "Login Screen" and "Registration Screen" are implemented.
-<div style="text-align: center;">
+<p align="center">
   <img src="images/Рисунок4.png" alt="Рисунок 4" width="180"/> <img src="images/Рисунок5.png" alt="Рисунок 5" width="180"/>
-</div>
+</p>
 
 Firebase Authentication provides the capability to manage user authentication. In addition to registration and login management, Firebase Authentication supports user session management, allowing for state preservation between application launches. Access to the application remains until the user logs out manually or their session is terminated.
 
@@ -103,20 +104,23 @@ In addition to classic authentication using email and password, Firebase provide
 
 
 ## 1.6. Lessons Section
-<div style="text-align: center;">
+<p align="center">
   <img src="images/Рисунок6.png" alt="Рисунок 6" width="180"/> <img src="images/Рисунок7.png" alt="Рисунок 7" width="180"/> <img src="images/Рисунок8.png" alt="Рисунок 8" width="180"/>
-</div>
+</p>
 
 Lesson materials are stored in Firebase Storage. To structure the data, collections "levels" and "lessons" were created in Firestore Database.
-
-<img src="images/Рисунок9.png" alt="Рисунок 9" width="500"/>
-
+<p align="center">
+  <img src="images/Рисунок9.png" alt="Рисунок 9" width="700"/>
+</p>
 The "levels" collection contains documents corresponding to HSK levels. Each document includes the following fields:
 
 lessons: an array with a list of Lessons (the lessons collection) available for this level.
 level: the name of the level, displayed in the RecyclerView on the Levels screen.
 url: a link to the image stored in Firebase Storage. This image is displayed in the RecyclerView on the Levels screen and also on the Lessons screen (for this level).
-<img src="images/Рисунок10.png" alt="Рисунок 10" width="500"/>
+
+<p align="center">
+  <img src="images/Рисунок10.png" alt="Рисунок 10" width="700"/>
+</p>
 
 The "lessons" collection contains documents corresponding to lessons. Each document includes the following fields:
 
@@ -126,8 +130,9 @@ phonetics: a link to the video lesson on the topic of Phonetics.
 title: the name of the lesson.
 id: the lesson ID.
 To retrieve data in the application, the following classes were implemented:
-
-<img src="images/Рисунок11.png" alt="Рисунок 11" width="500"/>
+<p align="center">
+  <img src="images/Рисунок11.png" alt="Рисунок 11" width="500"/>
+</p>
 
 To display the list of levels, the list of lessons, and to populate each lesson, RecyclerView and an adapter were used.
 
@@ -173,19 +178,24 @@ The word in Chinese (hieroglyphs).
 Pinyin (pronunciation).
 Example sentences (in Chinese, pinyin, and Russian).
 
-<img src="images/Рисунок12.png" alt="Рисунок 12" width="180"/> <img src="images/Рисунок13.png" alt="Рисунок 13" width="180"/> <img src="images/Рисунок14.png" alt="Рисунок 14" width="180"/>
+<p align="center">
+  <img src="images/Рисунок12.png" alt="Рисунок 12" width="180"/> <img src="images/Рисунок13.png" alt="Рисунок 13" width="180"/> <img src="images/Рисунок14.png" alt="Рисунок 14" width="180"/>
+</p>
 
 All data about 3D models and resources are stored in Firebase Storage. Each 3D model has a separate document in the Firestore Database. To structure the data, collections "3d_categories" and "3d_models" were created.
 
-<img src="images/Рисунок15.png" alt="Рисунок 15" width="500"/>
-
+<p align="center">
+  <img src="images/Рисунок15.png" alt="Рисунок 15" width="700"/>
+</p>
 The "3d_categories" collection contains documents with category names. Each document includes the following fields:
 
 3d_models: a list of 3D models related to this category (these models are stored in the "3d_models" collection).
 category: the name of the category.
 url: an image of the category, which is displayed in the AR Room Menu.
 
-<img src="images/Рисунок16.png" alt="Рисунок 16" width="500"/>
+<p align="center">
+  <img src="images/Рисунок16.png" alt="Рисунок 16" width="700"/>
+</p>
 
 The "3d_models" collection contains documents with 3D models. Each document includes the following fields:
 
@@ -194,14 +204,16 @@ model: a link to the 3D model in GLB format.
 name: the name of the object (this field is used to load data for the AR Room dictionary).
 video: a link to the video resource for this word.
 To retrieve data in the application, the following classes were implemented.
-
-<img src="images/Рисунок17.png" alt="Рисунок 17" width="500"/>
+<p align="center">
+  <img src="images/Рисунок17.png" alt="Рисунок 17" width="500"/>
+</p>
 
 Sequence of Actions:
 The user selects a category in the "AR Room Menu".
 On the "AR Room" screen, surface detection occurs, and the lower panel displays lists of objects from this category for study in the form of icons. All of them are loaded via RecyclerView.
-
-<img src="images/Рисунок18.png" alt="Рисунок 18" width="180"/> <img src="images/Рисунок19.png" alt="Рисунок 19" width="180"/>
+<p align="center">
+  <img src="images/Рисунок18.png" alt="Рисунок 18" width="180"/> <img src="images/Рисунок19.png" alt="Рисунок 19" width="180"/>
+</p>
 
 The user selects one of the words.
 It is necessary to wait for the notification "Model generated" and then place the model on the detected surface.
@@ -236,7 +248,9 @@ Listing 1. "description.json"
 ```
 To extract data from the JSON file, the following classes were implemented.
 
-<img src="images/Рисунок20.png" alt="Рисунок 20" width="500"/>
+<p align="center">
+  <img src="images/Рисунок20.png" alt="Рисунок 20" width="500"/>
+</p>
 
 For working with augmented reality, AR Core and Sceneform are used.
 
@@ -288,7 +302,9 @@ The GLB (GL Transmission Format Binary) and glTF (GL Transmission Format) 3D mod
 
 The figure shows the variety and multitude of different files that make up 3D models. It visually demonstrates the complexity of integrating them into a project.
 
-<img src="images/Рисунок21.png" alt="Рисунок 21" width="500"/>
+<p align="center">
+  <img src="images/Рисунок21.png" alt="Рисунок 21" width="500"/>
+</p>
 
 Now let's take a closer look at the GLB and GLTF formats.
 
@@ -331,12 +347,15 @@ GLB is often preferred for web applications with 3D graphics, where fast loading
 This section provides an opportunity for students to test their knowledge. On the Quizlet screen, a list of all available tests is displayed, along with the time allocated for completing them.
 
 On the Quizlet Question screen, one of the test questions is displayed along with the answer options. The time for completion is counted down. After finishing the test, a dialog window appears showing the results in terms of the number of correct answers and the percentage score.
-
-<img src="images/Рисунок22.png" alt="Рисунок 22" width="180"/> <img src="images/Рисунок23.png" alt="Рисунок 23" width="180"/> <img src="images/Рисунок24.png" alt="Рисунок 24" width="180"/>
+<p align="center">
+  <img src="images/Рисунок22.png" alt="Рисунок 22" width="180"/> <img src="images/Рисунок23.png" alt="Рисунок 23" width="180"/> <img src="images/Рисунок24.png" alt="Рисунок 24" width="180"/>
+</p>
 
 The data for this section is stored in Realtime Database. The following classes were implemented to extract the data:
 
-<img src="images/Рисунок25.png" alt="Рисунок 25" width="500"/>
+<p align="center">
+  <img src="images/Рисунок25.png" alt="Рисунок 25" width="500"/>
+</p>
 
 
 # Conclusion
